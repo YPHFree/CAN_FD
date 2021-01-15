@@ -1,0 +1,11 @@
+/*@!Encoding:1252*/
+
+on key 'a'
+{  
+  //write("CAN1: BUS Load:%f",busload);
+  write("CAN1: BUS Load:%f",@sysvar::_Statistics::CAN1::Busload);
+  write("CAN2: BUS Load:%f",@sysvar::_Statistics::CAN2::Busload);
+  
+  write("CAN1 ExtData: No:%d",@sysvar::_Statistics::CAN1::ExtData);
+  write("CAN1 StdData   No:%d",@sysvar::_Statistics::CAN1::StdData);
+}
